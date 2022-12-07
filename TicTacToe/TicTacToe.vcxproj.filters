@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Commons">
+      <UniqueIdentifier>{0d11f9d3-31ed-4409-8359-e265b81b99d6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Commons">
+      <UniqueIdentifier>{05617f3e-6856-4c25-bd88-b3197a0d2101}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Piece.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Grid.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TicTacToe.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Commons\AppWindow.cpp">
+      <Filter>Source Files\Commons</Filter>
+    </ClCompile>
+    <ClCompile Include="Commons\Entity.cpp">
+      <Filter>Source Files\Commons</Filter>
+    </ClCompile>
+    <ClCompile Include="Commons\Sprite.cpp">
+      <Filter>Source Files\Commons</Filter>
+    </ClCompile>
+    <ClCompile Include="TurnManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Commons\Text.cpp">
+      <Filter>Source Files\Commons</Filter>
+    </ClCompile>
+    <ClCompile Include="Commons\InputManager.cpp">
+      <Filter>Source Files\Commons</Filter>
+    </ClCompile>
+    <ClCompile Include="Commons\SFMLWrapper.cpp">
+      <Filter>Source Files\Commons</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Piece.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Grid.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TicTacToe.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Commons\Sprite.h">
+      <Filter>Header Files\Commons</Filter>
+    </ClInclude>
+    <ClInclude Include="Commons\Entity.h">
+      <Filter>Header Files\Commons</Filter>
+    </ClInclude>
+    <ClInclude Include="Commons\AppWindow.h">
+      <Filter>Header Files\Commons</Filter>
+    </ClInclude>
+    <ClInclude Include="TurnManager.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Commons\Text.h">
+      <Filter>Header Files\Commons</Filter>
+    </ClInclude>
+    <ClInclude Include="Commons\InputManager.h">
+      <Filter>Header Files\Commons</Filter>
+    </ClInclude>
+    <ClInclude Include="Commons\SFMLWrapper.h">
+      <Filter>Header Files\Commons</Filter>
+    </ClInclude>
+    <ClInclude Include="Commons\Vector2D.h">
+      <Filter>Header Files\Commons</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
