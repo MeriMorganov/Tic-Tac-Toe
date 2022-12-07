@@ -15,6 +15,6 @@ This folder has applications that were not written by me so please read their li
 
 ## About
 
-These projects are used to showcase my workflow as a Software Engineer with a bit of an art side. 
+These projects are used to showcase my workflow as a Software Engineer with a bit of an art side.  
 Linkedin: https://www.linkedin.com/in/meri-morganov-43818a21/  
 ArtStation: https://www.artstation.com/merimorganov  
