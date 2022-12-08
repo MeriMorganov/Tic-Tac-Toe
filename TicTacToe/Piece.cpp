@@ -48,7 +48,7 @@ namespace TicTacToe
 	}
 	void Piece::LoadPieceSprites()
 	{
-		pieceSprites = std::shared_ptr<Commons::Sprite[]>(new Commons::Sprite[MAX_PIECES]());
+		pieceSprites = std::shared_ptr<Commons::Sprite[]>(new Commons::Sprite[PieceType_Max]());
 		pieceSprites[PieceType_None].SetSprite(PIECE_NONE_FILEPATH);
 		pieceSprites[PieceType_None].SetTransparency(NONE_TRANSPARENCY);
 		pieceSprites[PieceType_OPiece].SetSprite(PIECE_O_FILEPATH);

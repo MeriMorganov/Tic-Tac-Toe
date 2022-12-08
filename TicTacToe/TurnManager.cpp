@@ -6,11 +6,10 @@ namespace TicTacToe
 	const float TurnManager::CURRENT_TURN_PIECE_OFFSET_X = 100.0f;
 	const float TurnManager::CURRENT_TURN_PIECE_OFFSET_Y = 50.0f;
 	const char* TurnManager::CURRENT_TURN_TEXT = "Current Turn";
-	const char* TurnManager::CURRENT_TURN_TEXT_FONT_PATH = "3rdParty/pixel-emulator-font/PixelEmulator-xq08.ttf";
 	TurnManager::TurnManager()
 	{
 		Reset();
-		text->SetFont(CURRENT_TURN_TEXT_FONT_PATH);
+		text->SetFont(TicTacToe::DEFAULT_FONT_PATH);
 		text->SetText(CURRENT_TURN_TEXT);
 		SetPosition(Commons::Vector2D<float>(CURRENT_TURN_POS_X, CURRENT_TURN_POS_Y));
 	}

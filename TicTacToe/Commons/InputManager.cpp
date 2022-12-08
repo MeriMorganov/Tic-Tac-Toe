@@ -8,22 +8,23 @@ namespace Commons
 	}
 	bool InputManager::IsLeftMouseClick(const sf::Event& event)
 	{
-		if (event.mouseButton.button == sf::Mouse::Left)
+		if (IsLeftMouseDown(event) && mouseDown == false)
 		{
-			if (event.type == sf::Event::MouseButtonPressed && mouseDown == false)
-			{
-				mouseDown = true;
-				return true;
-			}
-			if (mouseDown == true)
-			{
-				if (event.type == sf::Event::MouseButtonReleased)
-				{
-					mouseDown = false;
-				}
-			}
+			mouseDown = true;
+			return true;
 		}
-
+		if (mouseDown == true && IsLeftMouseReleased(event))
+		{
+			mouseDown = false;
+		}
 		return false;
+	}
+	bool InputManager::IsLeftMouseDown(const sf::Event& event)
+	{
+		return event.type == sf::Event::MouseButtonPressed && event.mouseButton.button == sf::Mouse::Left;
+	}
+	bool InputManager::IsLeftMouseReleased(const sf::Event& event)
+	{
+		return event.type == sf::Event::MouseButtonReleased && event.mouseButton.button == sf::Mouse::Left;
 	}
 }

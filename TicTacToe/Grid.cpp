@@ -26,7 +26,6 @@ namespace TicTacToe
 				offset->y++;
 				offset->x = 0;
 			}
-			pieces[i].Reset();
 			pieces[i].SetPosition(Commons::Vector2D<float>(GRID_POS_X+(GRID_OFFSET * offset->x), GRID_POS_Y+ (GRID_OFFSET * offset->y)));
 			offset->x++;
 		}
@@ -34,7 +33,11 @@ namespace TicTacToe
 	}
 	void Grid::Reset()
 	{
-		InitializeGrid();
+		for (int i = 0; i < MAX_PIECES; i++)
+		{
+			pieces[i].Reset();
+		}
+		isGameDone = false;
 	}
 	void Grid::SetPosition(const Commons::Vector2D<float>& position)
 	{

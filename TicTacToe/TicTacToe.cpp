@@ -26,20 +26,31 @@ namespace TicTacToe
 
             Commons::AppWindow::Instance().Clear();
             Draw();
-            Commons::AppWindow::Instance().Display();
+            if (restartButton->IsClicked(event))
+            {
+                Reset();
+            }
             if (grid->IsGameDone())
             {
-                
+
             }
             else
             {
                 grid->CheckForPiecesMouseClick(event);
             }
+            restartButton->UpdateState(event);
+            Commons::AppWindow::Instance().Display();
         }
     }
     void TicTacToe::Draw()
     {
         grid->Draw();
+        restartButton->Draw();
         TurnManager::Instance().Draw();
+    }
+    void TicTacToe::Reset()
+    {
+        grid->Reset();
+        TurnManager::Instance().Reset();
     }
 }

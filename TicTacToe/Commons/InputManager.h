@@ -9,6 +9,8 @@ namespace Commons
 	public:
 		static InputManager& Instance();
 		bool IsLeftMouseClick(const sf::Event& event);
+		bool IsLeftMouseDown(const sf::Event& event);
+		bool IsLeftMouseReleased(const sf::Event& event);
 
 	private:
 		bool mouseDown;

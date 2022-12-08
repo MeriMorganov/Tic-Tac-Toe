@@ -1,6 +1,7 @@
 #pragma once
 #ifndef TURN_MANAGER_h
 #define TURN_MANAGER_h
+#include "Globals.h"
 #include "Entity.h"
 #include "Text.h"
 #include "Piece.h"
@@ -25,7 +26,6 @@ namespace TicTacToe
 		static const float CURRENT_TURN_PIECE_OFFSET_Y;
 
 		static const char* CURRENT_TURN_TEXT;
-		static const char* CURRENT_TURN_TEXT_FONT_PATH;
 
 		std::shared_ptr <Commons::Text> text = std::make_shared<Commons::Text>();
 		std::shared_ptr <Piece> currentTurnPiece = std::make_shared<Piece>();

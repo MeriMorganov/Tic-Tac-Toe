@@ -4,6 +4,7 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "AppWindow.h"
+#include "RestartButton.h"
 #include "Grid.h"
 #include "TurnManager.h"
 namespace TicTacToe
@@ -11,13 +12,16 @@ namespace TicTacToe
 	class TicTacToe
 	{
 	public:
+
 		TicTacToe();
 		~TicTacToe();
 		static TicTacToe& Instance();
 		void Update();
 		void Draw();
+		void Reset();
 	private:
 		std::unique_ptr<Grid> grid = std::make_unique<Grid>();
+		std::unique_ptr<RestartButton> restartButton = std::make_unique<RestartButton>();
 	};
 }
 #endif

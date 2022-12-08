@@ -140,9 +140,11 @@
     <ClCompile Include="Commons\SFMLWrapper.cpp" />
     <ClCompile Include="Commons\Sprite.cpp" />
     <ClCompile Include="Commons\Text.cpp" />
+    <ClCompile Include="Globals.cpp" />
     <ClCompile Include="Grid.cpp" />
     <ClCompile Include="Main.cpp" />
     <ClCompile Include="Piece.cpp" />
+    <ClCompile Include="RestartButton.cpp" />
     <ClCompile Include="TicTacToe.cpp" />
     <ClCompile Include="TurnManager.cpp" />
   </ItemGroup>
@@ -155,8 +157,10 @@
     <ClInclude Include="Commons\Sprite.h" />
     <ClInclude Include="Commons\Text.h" />
     <ClInclude Include="Commons\Vector2D.h" />
+    <ClInclude Include="Globals.h" />
     <ClInclude Include="Grid.h" />
     <ClInclude Include="Piece.h" />
+    <ClInclude Include="RestartButton.h" />
     <ClInclude Include="TicTacToe.h" />
     <ClInclude Include="TurnManager.h" />
   </ItemGroup>

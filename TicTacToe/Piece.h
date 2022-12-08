@@ -1,6 +1,7 @@
 #pragma once
 #ifndef PIECE_h
 #define PIECE_h
+#include "Globals.h"
 #include "Entity.h"
 #include "Sprite.h"
 #include "AppWindow.h"
@@ -29,8 +30,6 @@ namespace TicTacToe
 
 	private:
 		static const sf::Uint8 NONE_TRANSPARENCY = 124;
-		static const int MAX_PIECES = 3;
-
 		static const char* PIECE_NONE_FILEPATH;
 		static const char* PIECE_O_FILEPATH;
 		static const char* PIECE_X_FILEPATH;
