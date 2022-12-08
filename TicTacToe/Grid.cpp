@@ -77,12 +77,16 @@ namespace TicTacToe
 	bool Grid::CheckIfGameDone()
 	{
 		Piece::PieceType currentTurn = TurnManager::Instance().GetCurrentTurn();
-		if (CheckIfTie() || 
-			CheckIfHorizontalRow(currentTurn) ||
+		if (CheckIfHorizontalRow(currentTurn) ||
 			CheckIfVerticalRow(currentTurn) ||
 			CheckIfDiagonalRow(currentTurn))
 		{
 			std::cout << "You win!";
+			return true;
+		}
+		else if(CheckIfTie())
+		{
+			std::cout << "It's a tie!";
 			return true;
 		}
 
