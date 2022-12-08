@@ -1,10 +1,20 @@
 #include "TicTacToe.h"
 namespace TicTacToe
 {
-    void TicTacToe::TicTacToe::Launch()
+    TicTacToe::TicTacToe()
     {
-        std::unique_ptr<Grid> grid = std::make_unique<Grid>();
         grid->InitializeGrid();
+    }
+    TicTacToe::~TicTacToe()
+    {
+    }
+    TicTacToe& TicTacToe::Instance()
+    {
+            static TicTacToe INSTANCE;
+            return INSTANCE;
+    }
+    void TicTacToe::TicTacToe::Update()
+    {
         while (Commons::AppWindow::Instance().IsOpen())
         {
             sf::Event event;
@@ -15,8 +25,7 @@ namespace TicTacToe
             }
 
             Commons::AppWindow::Instance().Clear();
-            grid->Draw();
-            TurnManager::Instance().Draw();
+            Draw();
             Commons::AppWindow::Instance().Display();
             if (grid->IsGameDone())
             {
@@ -30,5 +39,7 @@ namespace TicTacToe
     }
     void TicTacToe::Draw()
     {
+        grid->Draw();
+        TurnManager::Instance().Draw();
     }
 }

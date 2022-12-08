@@ -14,7 +14,6 @@ namespace TicTacToe
 	{
 
 	}
-
 	void Grid::InitializeGrid()
 	{
 		std::unique_ptr<Commons::Vector2D<float>> offset = std::make_unique<Commons::Vector2D<float>>();
@@ -62,12 +61,11 @@ namespace TicTacToe
 			{
 				if (pieces[i].GetPieceType() == Piece::PieceType_None)
 				{
-					sf::FloatRect bounds = pieces[i].GetCurrentSprite()->GetGlobalBounds();
-					if (bounds.contains(Commons::AppWindow::Instance().GetMousePos()))
+					if (pieces[i].CheckForMouseClick(event))
 					{
 						pieces[i].SetPieceType(TurnManager::Instance().GetCurrentTurn());
 						isGameDone = CheckIfGameDone();
-						TurnManager::Instance().SetNextTurn();
+						isGameDone ? TurnManager::Instance().SetNoTurn() : TurnManager::Instance().SetNextTurn();			
 					}
 				}
 			}
@@ -139,12 +137,8 @@ namespace TicTacToe
 	}
 	bool Grid::CheckIfDiagonalRow(const Piece::PieceType& pieceType)
 	{
-		if (CheckRowWin(pieceType,0,4,8) ||
-			CheckRowWin(pieceType, 2, 4, 6))
-		{
-			return true;
-		}
-		return false;
+		return  (CheckRowWin(pieceType, 0, 4, 8) ||
+			CheckRowWin(pieceType, 2, 4, 6));
 	}
 	bool Grid::IsGameDone()
 	{

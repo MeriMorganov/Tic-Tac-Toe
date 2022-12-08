@@ -25,6 +25,7 @@ namespace TicTacToe
 		void Reset() override;
 		void SetPosition(const Commons::Vector2D<float>& position) override;
 		void Draw() override;
+		bool CheckForMouseClick(sf::Event& event);
 
 	private:
 		static const sf::Uint8 NONE_TRANSPARENCY = 124;

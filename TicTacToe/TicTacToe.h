@@ -11,8 +11,13 @@ namespace TicTacToe
 	class TicTacToe
 	{
 	public:
-		static void Launch();
-		static void Draw();
+		TicTacToe();
+		~TicTacToe();
+		static TicTacToe& Instance();
+		void Update();
+		void Draw();
+	private:
+		std::unique_ptr<Grid> grid = std::make_unique<Grid>();
 	};
 }
 #endif

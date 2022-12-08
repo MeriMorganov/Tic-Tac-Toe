@@ -31,7 +31,8 @@ namespace TicTacToe
 	void TurnManager::SetPosition(const Commons::Vector2D<float>& position)
 	{
 		text->SetPosition(sf::Vector2f(position.x, position.y));
-		currentTurnPiece->SetPosition(Commons::Vector2D<float>(position.x + CURRENT_TURN_PIECE_OFFSET_X, position.y + CURRENT_TURN_PIECE_OFFSET_Y));
+		currentTurnPiece->SetPosition(Commons::Vector2D<float>(position.x + CURRENT_TURN_PIECE_OFFSET_X, 
+			position.y + CURRENT_TURN_PIECE_OFFSET_Y));
 	}
 
 	void TurnManager::Draw()
@@ -47,13 +48,12 @@ namespace TicTacToe
 
 	void TurnManager::SetNextTurn()
 	{
-		if (currentTurnPiece->GetPieceType() == Piece::PieceType_OPiece)
-		{
-			currentTurnPiece->SetPieceType(Piece::PieceType_XPiece);
-		}
-		else
-		{
+		currentTurnPiece->GetPieceType() == Piece::PieceType_OPiece ? 
+			currentTurnPiece->SetPieceType(Piece::PieceType_XPiece) : 
 			currentTurnPiece->SetPieceType(Piece::PieceType_OPiece);
-		}
+	}
+	void TurnManager::SetNoTurn()
+	{
+		currentTurnPiece->SetPieceType(Piece::PieceType_None);
 	}
 }

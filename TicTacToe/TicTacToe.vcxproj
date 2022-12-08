@@ -134,6 +134,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Commons\AppWindow.cpp" />
+    <ClCompile Include="Commons\Button.cpp" />
     <ClCompile Include="Commons\Entity.cpp" />
     <ClCompile Include="Commons\InputManager.cpp" />
     <ClCompile Include="Commons\SFMLWrapper.cpp" />
@@ -147,6 +148,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Commons\AppWindow.h" />
+    <ClInclude Include="Commons\Button.h" />
     <ClInclude Include="Commons\Entity.h" />
     <ClInclude Include="Commons\InputManager.h" />
     <ClInclude Include="Commons\SFMLWrapper.h" />

@@ -54,6 +54,9 @@
     <ClCompile Include="Commons\SFMLWrapper.cpp">
       <Filter>Source Files\Commons</Filter>
     </ClCompile>
+    <ClCompile Include="Commons\Button.cpp">
+      <Filter>Source Files\Commons</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Piece.h">
@@ -87,6 +90,9 @@
       <Filter>Header Files\Commons</Filter>
     </ClInclude>
     <ClInclude Include="Commons\Vector2D.h">
+      <Filter>Header Files\Commons</Filter>
+    </ClInclude>
+    <ClInclude Include="Commons\Button.h">
       <Filter>Header Files\Commons</Filter>
     </ClInclude>
   </ItemGroup>

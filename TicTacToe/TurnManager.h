@@ -17,6 +17,7 @@ namespace TicTacToe
 		void Draw() override;
 		Piece::PieceType GetCurrentTurn();
 		void SetNextTurn();
+		void SetNoTurn();
 	private:
 		static const float CURRENT_TURN_POS_X;
 		static const float CURRENT_TURN_POS_Y;

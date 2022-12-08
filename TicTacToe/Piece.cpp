@@ -41,6 +41,11 @@ namespace TicTacToe
 	{
 		pieceSprites[pieceType].Draw();
 	}
+	bool Piece::CheckForMouseClick(sf::Event& event)
+	{
+		sf::FloatRect bounds = GetCurrentSprite()->GetGlobalBounds();
+		return bounds.contains(Commons::AppWindow::Instance().GetMousePos());
+	}
 	void Piece::LoadPieceSprites()
 	{
 		pieceSprites = std::shared_ptr<Commons::Sprite[]>(new Commons::Sprite[MAX_PIECES]());
