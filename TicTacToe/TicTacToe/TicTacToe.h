@@ -9,7 +9,7 @@
 #include "TurnManager.h"
 namespace TicTacToe
 {
-	class TicTacToe
+	class TicTacToe // Main class for the game
 	{
 	public:
 

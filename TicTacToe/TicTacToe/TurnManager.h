@@ -7,7 +7,7 @@
 #include "Piece.h"
 namespace TicTacToe
 {
-	class TurnManager : Commons::Entity
+	class TurnManager : Commons::Entity // Shows the current turn if it's X's or O's turn
 	{
 	public:
 		TurnManager();

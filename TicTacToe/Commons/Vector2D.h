@@ -4,7 +4,7 @@
 namespace Commons
 {
 	template <class T>
-	class Vector2D
+	class Vector2D // Simple math vector class to make 2D vectors in any numeric typing
 	{
 	public:
 		Vector2D() {};
@@ -17,7 +17,7 @@ namespace Commons
 		T x;
 		T y;
 
-		//expand when needed
+		//expand when needed. eg. add Dot or Cross functions
 	};
 }
 #endif

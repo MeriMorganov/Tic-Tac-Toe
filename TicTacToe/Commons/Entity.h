@@ -1,10 +1,11 @@
 #pragma once
 #ifndef ENTITY_h
 #define ENTITY_h
+#include "SFMLWrapper.h"
 #include "Vector2D.h"
 namespace Commons
 {
-	class Entity
+	class Entity: public SFMLWrapper // For objects in the game
 	{
 	public:
 		Entity();

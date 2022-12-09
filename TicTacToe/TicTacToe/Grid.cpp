@@ -41,7 +41,7 @@ namespace TicTacToe
 	}
 	void Grid::SetPosition(const Commons::Vector2D<float>& position)
 	{
-		gridSprite->SetPosition(sf::Vector2f(position.x, position.y));
+		gridSprite->SetPosition(position);
 	}
 	void Grid::Draw()
 	{
@@ -81,12 +81,12 @@ namespace TicTacToe
 			CheckIfVerticalRow(currentTurn) ||
 			CheckIfDiagonalRow(currentTurn))
 		{
-			std::cout << "You win!";
+			Commons::DebugMsg::LogMsg("You win!");
 			return true;
 		}
 		else if(CheckIfTie())
 		{
-			std::cout << "It's a tie!";
+			Commons::DebugMsg::LogMsg("It's a tie!");
 			return true;
 		}
 

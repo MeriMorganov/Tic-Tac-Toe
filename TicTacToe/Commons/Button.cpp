@@ -8,15 +8,15 @@ namespace Commons
 	Button::~Button()
 	{
 	}
-	void Button::SetPosition(const sf::Vector2f& position)
+	void Button::SetPosition(const Vector2D<float>& position)
 	{
 		for (int i = 0; i < ButtonState_Max; i++)
 		{
-			buttonSpriteStates[i].SetPosition(sf::Vector2f(position.x, position.y));
+			buttonSpriteStates[i].SetPosition(position);
 		}
-		buttonText->SetPosition(sf::Vector2f(position.x + leftTextPadding, position.y + topTextPadding));
+		buttonText->SetPosition(Vector2D<float>(position.x + leftTextPadding, position.y + topTextPadding));
 	}
-	void Button::SetSprite(ButtonState buttonState, std::string filePath)
+	void Button::SetSprite(const ButtonState& buttonState, const std::string& filePath)
 	{
 		switch (buttonState)
 		{
@@ -31,7 +31,7 @@ namespace Commons
 			break;
 		}
 	}
-	void Button::SetText(std::string text, std::string fontPath)
+	void Button::SetText(const std::string& text, const std::string& fontPath)
 	{
 		buttonText->SetText(text);
 		buttonText->SetFont(fontPath);

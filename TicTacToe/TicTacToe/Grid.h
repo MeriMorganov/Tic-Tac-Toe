@@ -9,7 +9,7 @@
 #include "Vector2D.h"
 namespace TicTacToe
 {
-	class Grid: Commons::Entity
+	class Grid: Commons::Entity // The gameboard that the game is played on and contains the pieces
 	{
 	public:
 		Grid();

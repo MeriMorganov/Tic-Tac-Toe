@@ -14,17 +14,17 @@ namespace Commons
 	{
 		if (!texture.loadFromFile(filePath))
 		{
-			std::cout << "Sprite not loaded in!";
+			DebugMsg::LogErrorMsg("Sprite not lodaed in!");
 			return;
 		}
 		sprite.setTexture(texture);
 	}
 
-	void Sprite::SetPosition(const sf::Vector2f& position)
+	void Sprite::SetPosition(const Vector2D<float>& position)
 	{
-		sprite.setPosition(position);
+		sprite.setPosition(sf::Vector2f(position.x,position.y));
 	}
-	void Sprite::SetTransparency(const sf::Uint8& aplha)
+	void Sprite::SetTransparency(const unsigned char& aplha)
 	{
 		sf::Color currentColor = sprite.getColor();
 		sprite.setColor(sf::Color(currentColor.r, currentColor.g, currentColor.b, aplha));

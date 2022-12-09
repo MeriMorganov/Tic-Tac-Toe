@@ -9,22 +9,22 @@ namespace Commons
 	{
 
 	}
-	void Text::SetFont(const sf::String& filePath)
+	void Text::SetFont(const std::string& filePath)
 	{
 		if (!font.loadFromFile(filePath))
 		{
-			std::cout << "Font not loaded in!";
+			DebugMsg::LogErrorMsg("Font not loaded in!");
 			return;
 		}
 		text.setFont(font);
 	}
-	void Text::SetText(const sf::String& str)
+	void Text::SetText(const std::string& str)
 	{
 		text.setString(str);
 	}
-	void Text::SetPosition(const sf::Vector2f& position)
+	void Text::SetPosition(const Vector2D<float>& position)
 	{
-		text.setPosition(position);
+		text.setPosition(sf::Vector2f(position.x,position.y));
 	}
 	void Text::Draw()
 	{

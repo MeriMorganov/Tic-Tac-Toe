@@ -4,15 +4,15 @@
 #include "SFMLWrapper.h"
 namespace Commons
 {
-	class Sprite : SFMLWrapper
+	class Sprite : SFMLWrapper // Simple sprite base class to place an image on the screen easily
 	{
 	public:
 		Sprite();
 		~Sprite();
 
 		void SetSprite(const std::string& filePath);
-		void SetPosition(const sf::Vector2f& position) override;
-		void SetTransparency(const sf::Uint8& aplha); //255 = max
+		void SetPosition(const Vector2D<float>& position) override;
+		void SetTransparency(const unsigned char& aplha); //255 = max
 		sf::FloatRect GetGlobalBounds() override;
 		void Draw() override;
 

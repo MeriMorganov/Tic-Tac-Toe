@@ -29,7 +29,7 @@ namespace TicTacToe
 
 	void TurnManager::SetPosition(const Commons::Vector2D<float>& position)
 	{
-		text->SetPosition(sf::Vector2f(position.x, position.y));
+		text->SetPosition(position);
 		currentTurnPiece->SetPosition(Commons::Vector2D<float>(position.x + CURRENT_TURN_PIECE_OFFSET_X, 
 			position.y + CURRENT_TURN_PIECE_OFFSET_Y));
 	}

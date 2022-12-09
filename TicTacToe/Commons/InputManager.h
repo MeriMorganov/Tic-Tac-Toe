@@ -4,7 +4,7 @@
 #include <SFML/Graphics.hpp>
 namespace Commons
 {
-	class InputManager
+	class InputManager // Information on current user input
 	{
 	public:
 		static InputManager& Instance();

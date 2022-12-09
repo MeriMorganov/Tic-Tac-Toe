@@ -4,6 +4,7 @@ namespace TicTacToe
 	const char* Piece::PIECE_NONE_FILEPATH = "Assets/TicTacToe_None_Piece.png";
 	const char* Piece::PIECE_O_FILEPATH =	 "Assets/TicTacToe_O_Piece.png";
 	const char* Piece::PIECE_X_FILEPATH =    "Assets/TicTacToe_X_Piece.png";
+	const unsigned char& Piece::NONE_TRANSPARENCY = 124;
 
 	Piece::Piece()
 	{
@@ -34,7 +35,7 @@ namespace TicTacToe
 	{
 		for (int i = 0; i < PieceType_Max; i++)
 		{
-			pieceSprites[i].SetPosition(sf::Vector2f(position.x, position.y));
+			pieceSprites[i].SetPosition(position);
 		}
 	}
 	void Piece::Draw()

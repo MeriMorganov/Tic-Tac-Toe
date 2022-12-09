@@ -16,7 +16,7 @@ namespace TicTacToe
 		SetText(RESTART_TEXT,TicTacToe::DEFAULT_FONT_PATH);
 		SetLeftTextPadding(7.0f);
 		SetTopTextPadding(4.0f);
-		SetPosition(sf::Vector2f(BUTTON_X_POS, BUTTON_Y_POS));
+		SetPosition(Commons::Vector2D<float>(BUTTON_X_POS, BUTTON_Y_POS));
 	}
 
 	RestartButton::~RestartButton()

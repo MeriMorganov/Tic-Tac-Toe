@@ -4,14 +4,14 @@
 #include "SFMLWrapper.h"
 namespace Commons
 {
-	class Text : SFMLWrapper
+	class Text : SFMLWrapper // Simple sprite base class to place text on the screen easily
 	{
 	public:
 		Text();
 		~Text();
-		void SetFont(const sf::String& filePath);
-		void SetText(const sf::String& str);
-		void SetPosition(const sf::Vector2f& position) override;
+		void SetFont(const std::string& filePath);
+		void SetText(const std::string& str);
+		void SetPosition(const Vector2D<float>& position) override;
 		void Draw() override;
 	private:
 		sf::Text text;

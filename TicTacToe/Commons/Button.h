@@ -7,7 +7,7 @@
 #include "Text.h"
 namespace Commons
 {
-	class Button : SFMLWrapper
+	class Button : SFMLWrapper // Simple button base class for quick button creation
 	{
 	public:
 		enum ButtonState
@@ -19,9 +19,9 @@ namespace Commons
 		};
 		Button();
 		~Button();
-		virtual void SetPosition(const sf::Vector2f& position) override;
-		virtual void SetSprite(ButtonState buttonState, std::string filePath);
-		virtual void SetText(std::string text, std::string fontPath);
+		virtual void SetPosition(const Vector2D<float>& position) override;
+		virtual void SetSprite(const ButtonState& buttonState, const std::string& filePath);
+		virtual void SetText(const std::string& text, const std::string& fontPath);
 		virtual void SetLeftTextPadding(const float& padding);
 		virtual void SetTopTextPadding(const float& padding);
 		void SetButtonState(ButtonState buttonState);

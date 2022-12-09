@@ -7,7 +7,7 @@
 #include "AppWindow.h"
 namespace TicTacToe
 {
-	class Piece: Commons::Entity
+	class Piece: Commons::Entity // Piece object representing either the X or O
 	{
 	public:
 		enum PieceType
@@ -29,7 +29,7 @@ namespace TicTacToe
 		bool CheckForMouseClick(sf::Event& event);
 
 	private:
-		static const sf::Uint8 NONE_TRANSPARENCY = 124;
+		static const unsigned char& NONE_TRANSPARENCY;
 		static const char* PIECE_NONE_FILEPATH;
 		static const char* PIECE_O_FILEPATH;
 		static const char* PIECE_X_FILEPATH;

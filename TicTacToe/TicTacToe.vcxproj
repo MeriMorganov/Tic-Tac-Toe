@@ -104,7 +104,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)\3rdParty\SFML-2.5.1\include;$(ProjectDir)\Commons</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\3rdParty\SFML-2.5.1\include;$(ProjectDir)\Commons;$(ProjectDir)\TicTacToe</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -121,7 +121,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>SFML_STATIC;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(ProjectDir)\3rdParty\SFML-2.5.1\include;$(ProjectDir)\Commons</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(ProjectDir)\3rdParty\SFML-2.5.1\include;$(ProjectDir)\Commons;$(ProjectDir)\TicTacToe</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -135,34 +135,36 @@
   <ItemGroup>
     <ClCompile Include="Commons\AppWindow.cpp" />
     <ClCompile Include="Commons\Button.cpp" />
+    <ClCompile Include="Commons\DebugMsg.cpp" />
     <ClCompile Include="Commons\Entity.cpp" />
     <ClCompile Include="Commons\InputManager.cpp" />
     <ClCompile Include="Commons\SFMLWrapper.cpp" />
     <ClCompile Include="Commons\Sprite.cpp" />
     <ClCompile Include="Commons\Text.cpp" />
-    <ClCompile Include="Globals.cpp" />
-    <ClCompile Include="Grid.cpp" />
-    <ClCompile Include="Main.cpp" />
-    <ClCompile Include="Piece.cpp" />
-    <ClCompile Include="RestartButton.cpp" />
-    <ClCompile Include="TicTacToe.cpp" />
-    <ClCompile Include="TurnManager.cpp" />
+    <ClCompile Include="TicTacToe\Globals.cpp" />
+    <ClCompile Include="TicTacToe\Grid.cpp" />
+    <ClCompile Include="TicTacToe\Main.cpp" />
+    <ClCompile Include="TicTacToe\Piece.cpp" />
+    <ClCompile Include="TicTacToe\RestartButton.cpp" />
+    <ClCompile Include="TicTacToe\TicTacToe.cpp" />
+    <ClCompile Include="TicTacToe\TurnManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Commons\AppWindow.h" />
     <ClInclude Include="Commons\Button.h" />
+    <ClInclude Include="Commons\DebugMsg.h" />
     <ClInclude Include="Commons\Entity.h" />
     <ClInclude Include="Commons\InputManager.h" />
     <ClInclude Include="Commons\SFMLWrapper.h" />
     <ClInclude Include="Commons\Sprite.h" />
     <ClInclude Include="Commons\Text.h" />
     <ClInclude Include="Commons\Vector2D.h" />
-    <ClInclude Include="Globals.h" />
-    <ClInclude Include="Grid.h" />
-    <ClInclude Include="Piece.h" />
-    <ClInclude Include="RestartButton.h" />
-    <ClInclude Include="TicTacToe.h" />
-    <ClInclude Include="TurnManager.h" />
+    <ClInclude Include="TicTacToe\Globals.h" />
+    <ClInclude Include="TicTacToe\Grid.h" />
+    <ClInclude Include="TicTacToe\Piece.h" />
+    <ClInclude Include="TicTacToe\RestartButton.h" />
+    <ClInclude Include="TicTacToe\TicTacToe.h" />
+    <ClInclude Include="TicTacToe\TurnManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

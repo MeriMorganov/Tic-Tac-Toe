@@ -5,11 +5,12 @@
 #include <SFML/Graphics.hpp>
 #include "AppWindow.h"
 #include "Vector2D.h"
+#include "DebugMsg.h"
 namespace Commons
 {
-	class SFMLWrapper
+	class SFMLWrapper // Wrapper for the 3rd party SFML classes. 
 	{
-		virtual void SetPosition(const sf::Vector2f& position);
+		virtual void SetPosition(const Vector2D<float>& position);
 		virtual sf::FloatRect GetGlobalBounds();
 		virtual void Draw();
 	};

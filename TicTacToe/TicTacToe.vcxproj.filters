@@ -19,20 +19,14 @@
     <Filter Include="Source Files\Commons">
       <UniqueIdentifier>{05617f3e-6856-4c25-bd88-b3197a0d2101}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\TicTacToe">
+      <UniqueIdentifier>{a43a5d22-6976-41cc-861d-7d05a6b24815}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\TicTacToe">
+      <UniqueIdentifier>{f08ef6b7-3b96-4992-aad9-41381218e207}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Main.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Piece.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Grid.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="TicTacToe.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="Commons\AppWindow.cpp">
       <Filter>Source Files\Commons</Filter>
     </ClCompile>
@@ -41,9 +35,6 @@
     </ClCompile>
     <ClCompile Include="Commons\Sprite.cpp">
       <Filter>Source Files\Commons</Filter>
-    </ClCompile>
-    <ClCompile Include="TurnManager.cpp">
-      <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="Commons\Text.cpp">
       <Filter>Source Files\Commons</Filter>
@@ -57,23 +48,32 @@
     <ClCompile Include="Commons\Button.cpp">
       <Filter>Source Files\Commons</Filter>
     </ClCompile>
-    <ClCompile Include="RestartButton.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="TicTacToe\Globals.cpp">
+      <Filter>Source Files\TicTacToe</Filter>
     </ClCompile>
-    <ClCompile Include="Globals.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="TicTacToe\Grid.cpp">
+      <Filter>Source Files\TicTacToe</Filter>
+    </ClCompile>
+    <ClCompile Include="TicTacToe\Main.cpp">
+      <Filter>Source Files\TicTacToe</Filter>
+    </ClCompile>
+    <ClCompile Include="TicTacToe\Piece.cpp">
+      <Filter>Source Files\TicTacToe</Filter>
+    </ClCompile>
+    <ClCompile Include="TicTacToe\RestartButton.cpp">
+      <Filter>Source Files\TicTacToe</Filter>
+    </ClCompile>
+    <ClCompile Include="TicTacToe\TicTacToe.cpp">
+      <Filter>Source Files\TicTacToe</Filter>
+    </ClCompile>
+    <ClCompile Include="TicTacToe\TurnManager.cpp">
+      <Filter>Source Files\TicTacToe</Filter>
+    </ClCompile>
+    <ClCompile Include="Commons\DebugMsg.cpp">
+      <Filter>Source Files\Commons</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Piece.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="Grid.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="TicTacToe.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="Commons\Sprite.h">
       <Filter>Header Files\Commons</Filter>
     </ClInclude>
@@ -82,9 +82,6 @@
     </ClInclude>
     <ClInclude Include="Commons\AppWindow.h">
       <Filter>Header Files\Commons</Filter>
-    </ClInclude>
-    <ClInclude Include="TurnManager.h">
-      <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="Commons\Text.h">
       <Filter>Header Files\Commons</Filter>
@@ -101,11 +98,26 @@
     <ClInclude Include="Commons\Button.h">
       <Filter>Header Files\Commons</Filter>
     </ClInclude>
-    <ClInclude Include="RestartButton.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="TicTacToe\Globals.h">
+      <Filter>Header Files\TicTacToe</Filter>
     </ClInclude>
-    <ClInclude Include="Globals.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="TicTacToe\Grid.h">
+      <Filter>Header Files\TicTacToe</Filter>
+    </ClInclude>
+    <ClInclude Include="TicTacToe\Piece.h">
+      <Filter>Header Files\TicTacToe</Filter>
+    </ClInclude>
+    <ClInclude Include="TicTacToe\RestartButton.h">
+      <Filter>Header Files\TicTacToe</Filter>
+    </ClInclude>
+    <ClInclude Include="TicTacToe\TicTacToe.h">
+      <Filter>Header Files\TicTacToe</Filter>
+    </ClInclude>
+    <ClInclude Include="TicTacToe\TurnManager.h">
+      <Filter>Header Files\TicTacToe</Filter>
+    </ClInclude>
+    <ClInclude Include="Commons\DebugMsg.h">
+      <Filter>Header Files\Commons</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

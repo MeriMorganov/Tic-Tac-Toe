@@ -3,9 +3,10 @@
 #define RESTART_BUTTON_h
 #include "Globals.h"
 #include "Button.h"
+#include "Vector2D.h"
 namespace TicTacToe
 {
-	class RestartButton : public Commons::Button
+	class RestartButton : public Commons::Button // Button to clear the board to reset the game
 	{
 	public:
 		static const char* BUTTON_DEFAULT_FILEPATH;
