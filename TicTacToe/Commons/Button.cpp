@@ -3,7 +3,7 @@ namespace Commons
 {
 	Button::Button()
 	{
-		buttonSpriteStates = std::shared_ptr<Commons::Sprite[]>(new Commons::Sprite[ButtonState_Max]());
+		buttonSpriteStates = std::unique_ptr<Commons::Sprite[]>(new Commons::Sprite[ButtonState_Max]());
 	}
 	Button::~Button()
 	{

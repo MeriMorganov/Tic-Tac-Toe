@@ -35,7 +35,7 @@ namespace TicTacToe
 		static const char* PIECE_X_FILEPATH;
 
 		PieceType pieceType; //Either X or O or none
-		std::shared_ptr<Commons::Sprite[]> pieceSprites;
+		std::unique_ptr<Commons::Sprite[]> pieceSprites;
 
 		void LoadPieceSprites();
 

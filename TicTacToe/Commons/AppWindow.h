@@ -15,9 +15,9 @@ namespace Commons
 		static const int WINDOW_HEIGHT = 540;
 		static AppWindow& Instance();
 		sf::Vector2f GetMousePos();
-		bool IsOpen();
-		bool PollEvent(sf::Event& event);
-		void Draw(const sf::Drawable& drawable, const sf::RenderStates& states = sf::RenderStates::Default);
+		bool IsOpen(); // Is the application window open
+		bool PollEvent(sf::Event& event); // Use for update while block
+		void Draw(const sf::Drawable& drawable, const sf::RenderStates& states = sf::RenderStates::Default); // Pass in SFML drawables such as sprite or text
 		void Close();
 		void Clear();
 		void Display();

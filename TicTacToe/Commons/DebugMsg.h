@@ -6,7 +6,7 @@
 #include <windows.h> 
 namespace Commons
 {
-	class DebugMsg
+	class DebugMsg // Print messages to the console when in debug mode
 	{
 	public:
 		static void LogMsg(std::string msg);

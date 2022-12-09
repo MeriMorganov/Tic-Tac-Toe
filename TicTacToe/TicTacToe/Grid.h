@@ -35,8 +35,8 @@ namespace TicTacToe
 		static const float GRID_POS_Y;
 		static const float GRID_OFFSET;
 
-		std::shared_ptr <Commons::Sprite> gridSprite = std::make_shared<Commons::Sprite>();
-		std::shared_ptr <Piece[]> pieces;
+		std::unique_ptr <Commons::Sprite> gridSprite = std::make_unique<Commons::Sprite>();
+		std::unique_ptr <Piece[]> pieces;
 		std::unique_ptr <Commons::Vector2D<float>> gridPosition;
 		bool isGameDone = false;
 

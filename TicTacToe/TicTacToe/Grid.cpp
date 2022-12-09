@@ -7,7 +7,7 @@ namespace TicTacToe
 
 	Grid::Grid()
 	{
-		pieces = std::shared_ptr<Piece[]>(new Piece[MAX_PIECES]());
+		pieces = std::unique_ptr<Piece[]>(new Piece[MAX_PIECES]());
 		gridPosition = std::unique_ptr<Commons::Vector2D<float>>(new Commons::Vector2D<float>(GRID_POS_X, GRID_POS_Y));
 	}
 	Grid::~Grid()

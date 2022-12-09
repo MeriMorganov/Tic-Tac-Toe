@@ -8,7 +8,7 @@ namespace Commons
 	{
 	public:
 		static InputManager& Instance();
-		bool IsLeftMouseClick(const sf::Event& event);
+		bool IsLeftMouseClick(const sf::Event& event); // One whole mouse click instead of just down or release
 		bool IsLeftMouseDown(const sf::Event& event);
 		bool IsLeftMouseReleased(const sf::Event& event);
 

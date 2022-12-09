@@ -27,8 +27,8 @@ namespace TicTacToe
 
 		static const char* CURRENT_TURN_TEXT;
 
-		std::shared_ptr <Commons::Text> text = std::make_shared<Commons::Text>();
-		std::shared_ptr <Piece> currentTurnPiece = std::make_shared<Piece>();
+		std::unique_ptr <Commons::Text> text = std::make_unique<Commons::Text>();
+		std::unique_ptr <Piece> currentTurnPiece = std::make_unique<Piece>();
 	};
 }
 #endif
