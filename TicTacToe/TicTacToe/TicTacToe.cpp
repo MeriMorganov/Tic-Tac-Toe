@@ -49,6 +49,11 @@ namespace TicTacToe
         restartButton->Draw();
         ScoreBoard::Instance().Draw();
         grid->IsGameDone() ? WinnerBoard::Instance().Draw() : TurnManager::Instance().Draw();
+
+        if (grid->IsGameDone() && !grid->CheckIfTie())
+        {
+            WinnerBoard::Instance().DrawWinnerMedal();
+        }
     }
     void TicTacToe::Reset()
     {

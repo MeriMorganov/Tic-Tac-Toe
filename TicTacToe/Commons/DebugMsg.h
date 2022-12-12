@@ -1,4 +1,3 @@
-#ifdef _DEBUG  
 #pragma once
 #ifndef DEBUG_MSG_h
 #define DEBUG_MSG_h
@@ -19,5 +18,4 @@ namespace Commons
 		static const HANDLE H_CONSOLE;
 	};
 }
-#endif
 #endif
