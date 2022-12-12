@@ -29,13 +29,16 @@ namespace TicTacToe
 		bool CheckIfDiagonalRow(const Piece::PieceType& pieceType);
 		bool IsGameDone();
 	private:
+		static const char* GRID_FILEPATH;
 		static const int GRID_WIDTH = 3;
 		static const int GRID_HEIGHT = 3;
 		static const int MAX_PIECES = GRID_WIDTH * GRID_HEIGHT;
 
 		static const float GRID_POS_X;
 		static const float GRID_POS_Y;
-		static const float GRID_OFFSET;
+		static const float GRID_PIECE_OFFSET;
+		static const float GRID_BOARD_OFFSET_X;
+		static const float GRID_BOARD_OFFSET_Y;
 
 		std::unique_ptr <Commons::Sprite> gridSprite = std::make_unique<Commons::Sprite>();
 		std::unique_ptr <Piece[]> pieces;

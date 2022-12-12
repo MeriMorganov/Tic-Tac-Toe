@@ -1,14 +1,18 @@
 #include "Grid.h"
 namespace TicTacToe
 {
+	const char* Grid::GRID_FILEPATH = "Assets/TicTacToe_Grid.png";
 	const float Grid::GRID_POS_X = 350.0f;
 	const float Grid::GRID_POS_Y = 50.0f;
-	const float Grid::GRID_OFFSET = 100.0f;
+	const float Grid::GRID_PIECE_OFFSET = 70.0f;
+	const float Grid::GRID_BOARD_OFFSET_X = 0.0f;
+	const float Grid::GRID_BOARD_OFFSET_Y = 68.0f;
 
 	Grid::Grid()
 	{
 		pieces = std::unique_ptr<Piece[]>(new Piece[MAX_PIECES]());
-		gridPosition = std::unique_ptr<Commons::Vector2D<float>>(new Commons::Vector2D<float>(GRID_POS_X, GRID_POS_Y));
+		gridSprite->SetSprite(GRID_FILEPATH);
+		gridPosition = std::unique_ptr<Commons::Vector2D<float>>(new Commons::Vector2D<float>(GRID_POS_X+ GRID_BOARD_OFFSET_X, GRID_POS_Y+ GRID_BOARD_OFFSET_Y));
 	}
 	Grid::~Grid()
 	{
@@ -26,7 +30,7 @@ namespace TicTacToe
 				offset->y++;
 				offset->x = 0;
 			}
-			pieces[i].SetPosition(Commons::Vector2D<float>(GRID_POS_X+(GRID_OFFSET * offset->x), GRID_POS_Y+ (GRID_OFFSET * offset->y)));
+			pieces[i].SetPosition(Commons::Vector2D<float>(GRID_POS_X+(GRID_PIECE_OFFSET * offset->x), GRID_POS_Y+ (GRID_PIECE_OFFSET * offset->y)));
 			offset->x++;
 		}
 		SetPosition(*gridPosition);
