@@ -6,13 +6,15 @@
 #include "AppWindow.h"
 #include "Vector2D.h"
 #include "DebugMsg.h"
+#include "NotImplementedException.h"
 namespace Commons
 {
 	class SFMLWrapper // Wrapper for the 3rd party SFML classes. 
 	{
-		virtual void SetPosition(const Vector2D<float>& position);
-		virtual sf::FloatRect GetGlobalBounds();
-		virtual void Draw();
+		public:
+			virtual void SetPosition(const Vector2D<float>& position);
+			virtual sf::FloatRect GetGlobalBounds();
+			virtual void Draw();
 	};
 }
 #endif

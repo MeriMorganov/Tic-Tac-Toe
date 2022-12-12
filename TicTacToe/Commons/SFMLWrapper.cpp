@@ -6,7 +6,7 @@ namespace Commons
 	}
 	sf::FloatRect SFMLWrapper::GetGlobalBounds()
 	{
-		return sf::FloatRect();
+		throw NotImplementedException();
 	}
 	void SFMLWrapper::Draw()
 	{

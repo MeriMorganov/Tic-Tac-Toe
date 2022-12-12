@@ -72,6 +72,15 @@
     <ClCompile Include="Commons\DebugMsg.cpp">
       <Filter>Source Files\Commons</Filter>
     </ClCompile>
+    <ClCompile Include="TicTacToe\ScoreBoard.cpp">
+      <Filter>Source Files\TicTacToe</Filter>
+    </ClCompile>
+    <ClCompile Include="TicTacToe\WinnerBoard.cpp">
+      <Filter>Source Files\TicTacToe</Filter>
+    </ClCompile>
+    <ClCompile Include="TicTacToe\TopLeftPanel.cpp">
+      <Filter>Source Files\TicTacToe</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Commons\Sprite.h">
@@ -118,6 +127,18 @@
     </ClInclude>
     <ClInclude Include="Commons\DebugMsg.h">
       <Filter>Header Files\Commons</Filter>
+    </ClInclude>
+    <ClInclude Include="TicTacToe\ScoreBoard.h">
+      <Filter>Header Files\TicTacToe</Filter>
+    </ClInclude>
+    <ClInclude Include="Commons\NotImplementedException.h">
+      <Filter>Header Files\Commons</Filter>
+    </ClInclude>
+    <ClInclude Include="TicTacToe\WinnerBoard.h">
+      <Filter>Header Files\TicTacToe</Filter>
+    </ClInclude>
+    <ClInclude Include="TicTacToe\TopLeftPanel.h">
+      <Filter>Header Files\TicTacToe</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -5,6 +5,8 @@
 #include "Piece.h"
 #include "Sprite.h"
 #include "TurnManager.h"
+#include "WinnerBoard.h"
+#include "ScoreBoard.h"
 #include "InputManager.h"
 #include "Vector2D.h"
 namespace TicTacToe

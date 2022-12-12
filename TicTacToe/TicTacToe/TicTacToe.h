@@ -3,10 +3,13 @@
 #define TIC_TAC_TOE_h
 #include <iostream>
 #include <SFML/Graphics.hpp>
+#include "SFMLWrapper.h"
 #include "AppWindow.h"
 #include "RestartButton.h"
 #include "Grid.h"
 #include "TurnManager.h"
+#include "WinnerBoard.h"
+#include "ScoreBoard.h"
 namespace TicTacToe
 {
 	class TicTacToe // Main class for the game

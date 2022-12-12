@@ -1,4 +1,5 @@
 #include "TicTacToe.h"
+
 namespace TicTacToe
 {
     TicTacToe::TicTacToe()
@@ -32,7 +33,7 @@ namespace TicTacToe
             }
             if (grid->IsGameDone())
             {
-
+                
             }
             else
             {
@@ -46,7 +47,8 @@ namespace TicTacToe
     {
         grid->Draw();
         restartButton->Draw();
-        TurnManager::Instance().Draw();
+        ScoreBoard::Instance().Draw();
+        grid->IsGameDone() ? WinnerBoard::Instance().Draw() : TurnManager::Instance().Draw();
     }
     void TicTacToe::Reset()
     {

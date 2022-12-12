@@ -68,7 +68,26 @@ namespace TicTacToe
 					{
 						pieces[i].SetPieceType(TurnManager::Instance().GetCurrentTurn());
 						isGameDone = CheckIfGameDone();
-						isGameDone ? TurnManager::Instance().SetNoTurn() : TurnManager::Instance().SetNextTurn();			
+						if (IsGameDone())
+						{					
+							if (CheckIfTie()) //If it's a tie do not increment the score
+							{
+								WinnerBoard::Instance().SetWinnerPieceType(Piece::PieceType_None);
+								WinnerBoard::Instance().SetHeader(WinnerBoard::TIE_TEXT);
+							}
+							else // Otherwise increment the score
+							{
+								WinnerBoard::Instance().SetWinnerPieceType(TurnManager::Instance().GetCurrentTurn());
+								WinnerBoard::Instance().SetHeader(WinnerBoard::CURRENT_WINNER_TEXT);
+								ScoreBoard::Instance().IncrementScore(TurnManager::Instance().GetCurrentTurn());
+							}
+							TurnManager::Instance().SetNoTurn();
+
+						}
+						else
+						{
+							TurnManager::Instance().SetNextTurn();
+						}			
 					}
 				}
 			}

@@ -146,8 +146,11 @@
     <ClCompile Include="TicTacToe\Main.cpp" />
     <ClCompile Include="TicTacToe\Piece.cpp" />
     <ClCompile Include="TicTacToe\RestartButton.cpp" />
+    <ClCompile Include="TicTacToe\ScoreBoard.cpp" />
     <ClCompile Include="TicTacToe\TicTacToe.cpp" />
+    <ClCompile Include="TicTacToe\TopLeftPanel.cpp" />
     <ClCompile Include="TicTacToe\TurnManager.cpp" />
+    <ClCompile Include="TicTacToe\WinnerBoard.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Commons\AppWindow.h" />
@@ -155,6 +158,7 @@
     <ClInclude Include="Commons\DebugMsg.h" />
     <ClInclude Include="Commons\Entity.h" />
     <ClInclude Include="Commons\InputManager.h" />
+    <ClInclude Include="Commons\NotImplementedException.h" />
     <ClInclude Include="Commons\SFMLWrapper.h" />
     <ClInclude Include="Commons\Sprite.h" />
     <ClInclude Include="Commons\Text.h" />
@@ -163,8 +167,11 @@
     <ClInclude Include="TicTacToe\Grid.h" />
     <ClInclude Include="TicTacToe\Piece.h" />
     <ClInclude Include="TicTacToe\RestartButton.h" />
+    <ClInclude Include="TicTacToe\ScoreBoard.h" />
     <ClInclude Include="TicTacToe\TicTacToe.h" />
+    <ClInclude Include="TicTacToe\TopLeftPanel.h" />
     <ClInclude Include="TicTacToe\TurnManager.h" />
+    <ClInclude Include="TicTacToe\WinnerBoard.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
