@@ -1,9 +1,6 @@
 # Tic-Tac-Toe
 Simple Tic-Tac-Toe game in C++ with SFML integration. 
-
-![Screenshot](/TicTacToe/screeshot.png??raw=true&sanitize=tru "Screenshot")
-
-![ScreenShot](https://raw.github.com/MeriMorganov/TicTacToe/main/TicTacToe/screenshot.png)
+![ScreenShot](https://raw.github.com/MeriMorganov/Tic-Tac-Toe/main/TicTacToe/screenshot.png)
 
 ## Commons
 This folder contains generic code I written to be a base for the game such as wrappers for SFML. Outside this folder is more Tic-Tac-Toe specfic code. 
